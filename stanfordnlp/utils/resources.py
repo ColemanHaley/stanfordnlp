@@ -3,16 +3,16 @@ utilities for getting resources
 """
 
 import os
-import requests
 import zipfile
-
-from tqdm import tqdm
 from pathlib import Path
+
+import requests
+from tqdm import tqdm
 
 # set home dir for default
 HOME_DIR = str(Path.home())
 DEFAULT_MODEL_DIR = os.path.join(HOME_DIR, 'stanfordnlp_resources')
-DEFAULT_MODELS_URL = 'http://nlp.stanford.edu/software/stanfordnlp_models'
+DEFAULT_MODELS_URL = 'http://downloads.cs.stanford.edu/nlp/software/stanfordnlp_models'
 DEFAULT_DOWNLOAD_VERSION = 'latest'
 
 # list of language shorthands
